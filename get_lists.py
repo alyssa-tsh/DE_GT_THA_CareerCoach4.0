@@ -1,6 +1,7 @@
 import requests
 import pandas as pd
-import os
+import requests 
+
 
 def read_json(url):
     response = requests.get(url)
@@ -32,14 +33,25 @@ def get_restaurant_list(url):
     print(f"Extracted details for {len(restaurants_list)} restaurants")   
     return restaurants_list
 
+#Create a list to store dictionary of event details 
+def get_events_list(url):
+    data = read_json(url)
+    # List comprehension to extract event details
+    events_list = [
+        {
+            "Event Id": event["event"]["event_id"],
+            "Restaurant Id": restaurant["R"]["res_id"],
+            "Restaurant Name": restaurant["name"],
+            "Photo URL": restaurant["photos_url"],
+            "Event Title": event["event"]["title"],
+            "Event Start Date": event["event"]["start_date"],
+            "Event End Date": event["event"]["end_date"]
+        }
+        for item in data
+        for restaurant in (d["restaurant"] for d in item.get("restaurants", []))
+        for event in restaurant.get("zomato_events", [])
+    ]
 
-#fomats the restaurant details into a dataframe containing the county name in the Country Column
-def get_restaurant_details(url):
-    df_countries = pd.read_excel("datasets/Country-Code.xlsx")
-    #convert to a pd dataframe
-    df_main = pd.DataFrame(get_restaurant_list(url))
-    #merge on countries excel file to obtain country name
-    df_main = df_main.merge(df_countries, on = "Country Code", how = "left")
-    #drop country code column
-    df_main.drop(columns=["Country Code"], inplace = True)
-    return df_main
+    print(f"Extracted details for {len(events_list)} events")
+    return events_list
+

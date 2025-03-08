@@ -1,5 +1,5 @@
-from helper_functions import save_to_csv, get_month_events, get_events_list
-from run_res_func import get_restaurant_details
+from helper_functions import get_restaurant_details, save_to_csv, get_month_events
+from get_lists import get_events_list
 #generating restaurant_details.csv file
 restaurants_url = "https://raw.githubusercontent.com/Papagoat/brain-assessment/main/restaurant_data.json"
 
