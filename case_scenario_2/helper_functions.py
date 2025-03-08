@@ -86,7 +86,7 @@ def display_carpark_info(merged_dict, carpark_no):
 
     # Address and Location Details
     print("1. Address and Location Details:")
-    print(f"   Address: {carpark_data.get('address', 'N/A')}")
+    print(f"   {carpark_data.get('address', 'N/A')}")
     print()
 
     # Parking System Information

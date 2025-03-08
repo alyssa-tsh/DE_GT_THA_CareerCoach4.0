@@ -16,7 +16,7 @@ def query_carpark_info_by_number(df):
     pandas.Series or None: 
     The first row of the filtered DataFrame if a match is found, or None if no matching carpark number is found.
     """
-    carpark_no = input("Please enter the carpark number (e.g. A20): ").strip()
+    carpark_no = input("Please enter the carpark number (e.g. A20 under car_park_no in the table printed above: ").strip()
 
     filtered_df = df[df['car_park_no'] == carpark_no]
 
