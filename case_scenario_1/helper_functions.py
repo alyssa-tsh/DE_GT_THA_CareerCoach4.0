@@ -4,8 +4,11 @@ from get_lists import get_restaurant_list
 from get_lists import read_json
 
 
-#fomats the restaurant details into a dataframe containing the county name in the Country Column
+
 def get_restaurant_details(url):
+    """
+    Formats the restaurant details into a dataframe containing the county name in the Country Column
+    """
     df_countries = pd.read_excel("../datasets/Country-Code.xlsx")
     #convert to a pd dataframe
     df_main = pd.DataFrame(get_restaurant_list(url))
@@ -15,8 +18,19 @@ def get_restaurant_details(url):
     df_main.drop(columns=["Country Code"], inplace = True)
     return df_main
 
-#formats event details into a dataframe and filters for event data within a specified time frame given year & month (as integers) 
+
 def get_month_events(events_list, year = None, month = None):
+    """
+    Formats event details into a dataframe and filters for event data within a specified time frame given year & month (as integers) 
+
+    Args:
+        events_list (_type_): _description_
+        year (_type_, optional): _description_. Defaults to None.
+        month (_type_, optional): _description_. Defaults to None.
+
+    Returns:
+        _type_: _description_
+    """
     if year is not None and month is not None:
         year_month = f"{year}-{month:02d}"
         filtered_events = []
