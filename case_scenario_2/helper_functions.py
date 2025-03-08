@@ -98,8 +98,12 @@ def display_carpark_info(merged_dict, carpark_no):
 
     # Capacity and Availability
     print("3. Capacity and Availability:")
-    for lot_type, details in availability_data.items():
-        print(f"   Lot Type {lot_type} is {'AVAILABLE' if details.get('is_available', 'N/A') == True else 'UNAVAILABLE'}, {details.get('lots_available')} AVAILABLE slots out of {details.get('total_lots', 'N/A')} TOTAL slots, last updated  {details.get('update_datetime', 'N/A')}")
+    if availability_data == None:
+        print("No Information Available at the moment")
+
+    else:
+        for lot_type, details in availability_data.items():
+            print(f"   Lot Type {lot_type} is {'AVAILABLE' if details.get('is_available', 'N/A') == True else 'UNAVAILABLE'}, {details.get('lots_available')} AVAILABLE slots out of {details.get('total_lots', 'N/A')} TOTAL slots, last updated  {details.get('update_datetime', 'N/A')}")
     print()
 
     # Operating Hours and Rules
