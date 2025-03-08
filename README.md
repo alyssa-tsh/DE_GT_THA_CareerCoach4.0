@@ -34,7 +34,7 @@ Some non-standard address formats
 The system must take in a town name (it cannot filter based on block number only)
 If the user types an additional word it will throw an error and it cannot take in multiple inputs only 1
 
-## Please do give the system a try :D some interesting prompt-input cases u can try
+## If you would like to try out the program here are some test inputs/examples of how to inputs values :D
 ### Query OPTION 2
 - NO --> SENJA ROAD --> 616A 
 - NO --> JURONG WEST STREET --> 480
