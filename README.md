@@ -45,3 +45,4 @@ If the user types an additional word it will throw an error and it cannot take i
 - YES --> DEFU LANE 6
 - YES --> BLK 28 JALAN BAHAGIA
 - YES --> BLK 111A SAINT MICHAEL BUS TERMINAL
+- YES --> BLK 429, 438-441 CHOA CHU KANG AVENUE 4 (DIRECTLY COPY & PASTE AN ENTIRE ENTRY)
