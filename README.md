@@ -39,7 +39,7 @@ If the user types an additional word it will throw an error and it cannot take i
 - NO --> SENJA ROAD --> 616A 
 - NO --> JURONG WEST STREET --> 480
 - NO --> MARINE --> 7
-- NO --> BUKIT PANJANG ROAD --> NOT SURE --> follow prompts and input desired value
+- NO --> BUKIT PANJANG --> NOT SURE --> follow prompts and input desired value
 - YES --> 6 JALAN MINYAK
 - YES --> BLK 981D BUANGKOK
 - YES --> DEFU LANE 6
