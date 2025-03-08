@@ -26,9 +26,11 @@ Ensure that the datasets folder existss as a sub-folder in the
 - Reformatted block ranges (e.g., BLK 123 TO 125) ensure accurate matching.
 - Flexibility in input → Not case or spacing sensitive
 - subsets of addresses (e.g., 616A SENJA ROAD → BLK 611A/613A/615A/616A BUKIT PANJANG RING ROAD/SENJA ROAD) still return correct results.
-- 
+4. Query last updated time 
 Limitations:
-Some non-standard address formats (e.g., 12 TO 14 DOVER CLOSE EAST won’t match 13 DOVER CLOSE EAST), and alphanumeric blocks recognized if they belong to a range(i.e no exact match for that value in address).
+Some non-standard address formats 
+(e.g., 12 TO 14 DOVER CLOSE EAST won’t match 13 DOVER CLOSE EAST), and alphanumeric blocks recognized if they belong to a range
+(i.e no exact match for that value in address).
 The system must take in a town name (it cannot filter based on block number only)
 If the user types an additional word it will throw an error and it cannot take in multiple inputs only 1
 
@@ -37,7 +39,7 @@ If the user types an additional word it will throw an error and it cannot take i
 - NO --> SENJA ROAD --> 616A 
 - NO --> JURONG WEST STREET --> 480
 - NO --> MARINE --> 7
-- NO --> BUKIT PANJANG ROAD --> NOT SURE
+- NO --> BUKIT PANJANG ROAD --> NOT SURE --> follow prompts and input desired value
 - YES --> 6 JALAN MINYAK
 - YES --> BLK 981D BUANGKOK
 - YES --> DEFU LANE 6

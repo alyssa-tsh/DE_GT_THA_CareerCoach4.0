@@ -108,7 +108,7 @@ def display_carpark_info(merged_dict, carpark_no):
 
     # Operating Hours and Rules
     print("4. Operating Hours and Rules:")
-    print(f"   Short Term Parking: {carpark_data.get('short_term_parking', 'N/A')}")
+    print(f"   {carpark_data.get('short_term_parking', 'N/A')} Short Term Parking, Free Parking on {carpark_data.get('free_parking', 'N/A')}, ")
     print(f"   Free Parking: {carpark_data.get('free_parking', 'N/A')}")
     print(f"   Night Parking: {carpark_data.get('night_parking', 'N/A')}")
     print()
