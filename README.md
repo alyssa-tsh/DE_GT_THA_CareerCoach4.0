@@ -34,14 +34,15 @@ Some non-standard address formats
 The system must take in a town name (it cannot filter based on block number only)
 If the user types an additional word it will throw an error and it cannot take in multiple inputs only 1
 
-## Please do give the system a try :D some interesting prompt-input cases u can try
+## If you would like to try out the program here are some test inputs/examples of how to inputs values :D
 ### Query OPTION 2
 - NO --> SENJA ROAD --> 616A 
 - NO --> JURONG WEST STREET --> 480
 - NO --> MARINE --> 7
-- NO --> BUKIT PANJANG ROAD --> NOT SURE --> follow prompts and input desired value
+- NO --> BUKIT PANJANG --> NOT SURE --> follow prompts and input desired value
 - YES --> 6 JALAN MINYAK
 - YES --> BLK 981D BUANGKOK
 - YES --> DEFU LANE 6
 - YES --> BLK 28 JALAN BAHAGIA
 - YES --> BLK 111A SAINT MICHAEL BUS TERMINAL
+- YES --> BLK 429, 438-441 CHOA CHU KANG AVENUE 4 (DIRECTLY COPY & PASTE AN ENTIRE ENTRY)
