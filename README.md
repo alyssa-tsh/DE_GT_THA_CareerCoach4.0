@@ -7,8 +7,10 @@ Clone the repository into your local machine and just run the main.py file for e
 Ensure that the datasets folder existss as a sub-folder in the 
 
 ## Case Scenario 1
-* Key design:
+1. & 2. Key design:
 - The main functions get_restaurant_list and get_event_list process data from the json file provided from dictionaries into list before helper functions are called respectively on them to carry out data manipulation/transformation  and format them into dataframes for conversion into csv tables
+3. Analyzer App:
+- Change the working directory to the folder case_scenario_1 and Run python -m streamlit run analyzer_app.py to deploy the analyzer app (simple feature comprising of a slider to return the user rating text associated with the aggregate rating) 
 
 
 ## Case Scenario 2
