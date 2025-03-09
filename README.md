@@ -1,6 +1,6 @@
 # DE_GT_THA_CareerCoach4.0
 ## Project Overview
-The main objective of the modules in the repository are to process json data sources into lists/dataframes for ease of comprehension and formatting. 
+The main objective of the modules in the repository are to process json data sources into lists/dataframes for ease of comprehension and formatting, they can also be used to merge and process real time data and csv datasets and retrieve information from both sources via command line inputs based on different prompts
 
 ## Set Up and Running the Program
 Clone the repository into your local machine and just run the main.py file for each case scenario (in case_scenario1 and case_scenario_2) folders. 
@@ -37,6 +37,7 @@ The system must take in a town name (it cannot filter based on block number only
 If the user types an additional word it will throw an error and it cannot take in multiple inputs only 1
 
 ## If you would like to try out the program here are some test inputs/examples of how to inputs values :D
+## A demo video of how the different features work can also be found in the zip folder in my submission 
 ### Query OPTION 2
 - NO --> SENJA ROAD --> 616A 
 - NO --> JURONG WEST STREET --> 480
