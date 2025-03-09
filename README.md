@@ -22,19 +22,22 @@ Ensure that the datasets folder existss as a sub-folder in the
 ### User Flow:
 1. Start the program → Choose query type: 
 - Query by carpark number, address, or view latest update time.
+  
 2. Query by carpark number → Direct input.
+  
 3. Query by address → Users can input the entire address (e.g., BLK 136 TECK WHYE LANE → BLK 135-138,141,142,145 TECK WHYE LANE/AVENUE)
 - OR just town & block values as well as block values that are within the range in the address will also return relevant addresses
 - Reformatted block ranges (e.g., BLK 123 TO 125) ensure accurate matching.
 - Flexibility in input → Not case or spacing sensitive
 - subsets of addresses (e.g., 616A SENJA ROAD → BLK 611A/613A/615A/616A BUKIT PANJANG RING ROAD/SENJA ROAD) still return correct results.
-4. Query last updated time 
-Limitations:
+- Limitations:
 Some non-standard address formats 
 (e.g., 12 TO 14 DOVER CLOSE EAST won’t match 13 DOVER CLOSE EAST), and alphanumeric blocks recognized if they belong to a range
 (i.e no exact match for that value in address).
 The system must take in a town name (it cannot filter based on block number only)
 If the user types an additional word it will throw an error and it cannot take in multiple inputs only 1
+
+4. Query last updated time 
 
 ## If you would like to try out the program here are some test inputs/examples of how to inputs values :D
 ## A demo video of how the different features work can also be found in the zip folder in my submission 
