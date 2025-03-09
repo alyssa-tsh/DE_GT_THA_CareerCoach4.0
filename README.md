@@ -40,7 +40,7 @@ If the user types an additional word it will throw an error and it cannot take i
 4. Query last updated time 
 
 ## If you would like to try out the program here are some test inputs/examples of how to inputs values :D
-## A demo video of how the different features work can also be found in the zip folder in my submission 
+
 ### Query OPTION 2
 - NO --> SENJA ROAD --> 616A 
 - NO --> JURONG WEST STREET --> 480
@@ -52,3 +52,5 @@ If the user types an additional word it will throw an error and it cannot take i
 - YES --> BLK 28 JALAN BAHAGIA
 - YES --> BLK 111A SAINT MICHAEL BUS TERMINAL
 - YES --> BLK 429, 438-441 CHOA CHU KANG AVENUE 4 (DIRECTLY COPY & PASTE AN ENTIRE ENTRY)
+
+## A demo video of how the different features work can also be found in the zip folder in my submission 
