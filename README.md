@@ -4,7 +4,7 @@ The main objective of the modules in the repository are to process json data sou
 
 ## Set Up and Running the Program
 Clone the repository into your local machine and just run the main.py file for each case scenario (in case_scenario1 and case_scenario_2) folders. 
-Ensure that the datasets folder existss as a sub-folder in the 
+Ensure that the datasets folder exists as a sub-folder in the main folder
 
 ## Case Scenario 1
 1. & 2. Key design:
